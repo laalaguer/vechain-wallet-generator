@@ -1,0 +1,41 @@
+{
+  "name": "vechain-address",
+  "description": "A Vue.js project of VET address generation",
+  "version": "1.0.0",
+  "author": "laalaguer <laalaguer@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "bootstrap-vue": "^1.2.0",
+    "copy-to-clipboard": "^3.0.8",
+    "crypto-js": "^3.1.9-1",
+    "downloadjs": "^1.4.7",
+    "keccak": "^1.4.0",
+    "popper.js": "^1.12.9",
+    "qrcode": "^1.2.2",
+    "randombytes": "^2.0.6",
+    "scrypt-js": "^2.0.3",
+    "secp256k1": "^3.5.2",
+    "uuid": "^3.3.2",
+    "vue": "^2.5.3",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-env": "^1.6.1",
+    "cross-env": "^5.1.1",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "style-loader": "^0.19.0",
+    "vue-loader": "^13.5.0",
+    "vue-template-compiler": "^2.5.3",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  }
+}
