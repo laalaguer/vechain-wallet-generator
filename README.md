@@ -2,6 +2,9 @@
 
 > A Vue.js project of VET address generation.
 
+## Demo
+[https://laalaguer.github.io/VeChain-Address/](https://laalaguer.github.io/VeChain-Address/)
+
 ## Security
 1. This project runs totally in browser.
 2. Random source is from browser.
