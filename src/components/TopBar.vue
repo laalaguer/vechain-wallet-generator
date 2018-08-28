@@ -7,6 +7,7 @@
       <b-nav-text></b-nav-text>
       <b-navbar-nav>
         <b-nav-item href="https://github.com/laalaguer/VeChain-Address">Github</b-nav-item>
+        <b-nav-item href="https://github.com/laalaguer/VeChain-Address/releases">Releases</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
