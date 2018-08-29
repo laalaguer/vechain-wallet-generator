@@ -5,10 +5,10 @@
     <h6 class="text-muted" v-show="showSubtitle">{{ subtitle }}</h6>
     <qr-canvas :text-to-render="publicAddress"></qr-canvas>
     <b-form-group >
-      <copy-input :textToCopy="publicAddress"></copy-input>
+      <copy-input icon-name="map-marker-alt" :textToCopy="publicAddress"></copy-input>
     </b-form-group>
     <b-form-group>
-      <copy-input :textToCopy="privateAddress"></copy-input>
+      <copy-input icon-name="key" :textToCopy="privateAddress"></copy-input>
     </b-form-group>
     <b-button variant="primary" @click="downloadAddress">{{buttonText}}</b-button>
   </b-card-body>

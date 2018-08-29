@@ -17,7 +17,7 @@
       <qr-canvas ref="jsonqr" :text-to-render="jsonString"></qr-canvas>
       <p class="card-text text-muted">{{ helperString }}</p>
       <b-form-group>
-        <copy-input :textToCopy="jsonString"></copy-input>
+        <copy-input icon-name="code" :textToCopy="jsonString"></copy-input>
       </b-form-group>
       <b-button variant="primary" @click="downloadKeystore">{{buttonText}}</b-button>
     </div>
