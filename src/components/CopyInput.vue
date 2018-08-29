@@ -1,6 +1,6 @@
 <template>
   <b-input-group>
-    <font-awesome-icon class="key-icon" :icon="['fas', iconName]" />
+    <font-awesome-icon class="icon" :icon="['fas', iconName]" />
     <b-form-input v-model="textToCopy" type="text" class="rounded"></b-form-input>
     <b-input-group-addon>
       <b-btn variant="link text-success" v-on:click="copyToClipboard(textToCopy)"><font-awesome-icon :icon="['fas','copy']" /></b-btn>
@@ -28,7 +28,7 @@ export default {
 .input-group {
   align-items: center;
 }
-.key-icon {
+.icon {
   min-width: 20px;
   margin-right: 0.5rem;
 }
