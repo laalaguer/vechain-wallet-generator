@@ -6,7 +6,7 @@
     <b-collapse is-nav id="nav_collapse">
       <b-nav-text></b-nav-text>
       <b-navbar-nav>
-        <b-nav-item href="https://github.com/laalaguer/VeChain-Address">Github</b-nav-item>
+        <b-nav-item href="https://github.com/laalaguer/VeChain-Address"><font-awesome-icon class="github-icon" :icon="['fab','github']" />Github</b-nav-item>
         <b-nav-item href="https://github.com/laalaguer/VeChain-Address/releases">Releases</b-nav-item>
       </b-navbar-nav>
     </b-collapse>
@@ -20,3 +20,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.github-icon {
+  margin-right: 0.5rem;
+}
+</style>

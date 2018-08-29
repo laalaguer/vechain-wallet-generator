@@ -1,8 +1,9 @@
 <template>
   <b-input-group>
+    <font-awesome-icon class="key-icon" :icon="['fas', iconName]" />
     <b-form-input v-model="textToCopy" type="text" class="rounded"></b-form-input>
     <b-input-group-addon>
-      <b-btn variant="link text-success" v-on:click="copyToClipboard(textToCopy)">Copy</b-btn>
+      <b-btn variant="link text-success" v-on:click="copyToClipboard(textToCopy)"><font-awesome-icon :icon="['fas','copy']" /></b-btn>
     </b-input-group-addon>
   </b-input-group>
 </template>
@@ -11,7 +12,7 @@
 import copy from 'copy-to-clipboard'
 
 export default {
-  props: ['textToCopy'],
+  props: ['iconName', 'textToCopy'],
   data(){
     return {}
   },
@@ -22,3 +23,13 @@ export default {
   }
 }
 </script>
+
+<style>
+.input-group {
+  align-items: center;
+}
+.key-icon {
+  min-width: 20px;
+  margin-right: 0.5rem;
+}
+</style>
