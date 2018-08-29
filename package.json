@@ -27,6 +27,7 @@
     "secp256k1": "^3.5.2",
     "uuid": "^3.3.2",
     "vue": "^2.5.3",
+    "vue-toasted": "^1.1.24",
     "vuex": "^3.0.1"
   },
   "devDependencies": {

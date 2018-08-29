@@ -19,6 +19,11 @@ export default {
   methods:{
     copyToClipboard: function(someText){
       copy(someText)
+      this.$toasted.show('Copied', {
+        theme: "primary", 
+        position: "bottom-center",
+        duration : 500
+      })
     }
   }
 }

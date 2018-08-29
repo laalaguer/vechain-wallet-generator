@@ -10,6 +10,9 @@ import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap-vue/dist/bootstrap-vue.css"
+import Toasted from 'vue-toasted'
+
+Vue.use(Toasted)
 
 Vue.use(BootstrapVue)
 
