@@ -73,7 +73,7 @@ export default {
   },
   mounted(){
     this.borderColor = this.getBorderColor(this.cardIndex)
-    console.log(this.borderColor)
+    // console.log(this.borderColor)
   }
 }
 </script>
