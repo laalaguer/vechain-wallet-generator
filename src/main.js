@@ -12,7 +12,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap-vue/dist/bootstrap-vue.css"
 import i18n from './i18n/i18n'
+import Toasted from 'vue-toasted'
 
+
+Vue.use(Toasted)
 Vue.use(BootstrapVue)
 
 library.add(faGithub)

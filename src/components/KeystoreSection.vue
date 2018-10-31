@@ -95,7 +95,7 @@ export default {
           this.$refs.passwordModal.hide()
         }
         if (progress){
-          console.log(progress)
+          // console.log(progress)
           this.$refs.passwordModal.hide()
           this.updateProgress(progress)
         }
@@ -119,8 +119,7 @@ export default {
     updateProgress(progress){
       // progress = 0.0 ~ 1.0
       let p = (progress*100).toFixed(2) + '%'
-      this.generateKeystoreText = p
-      console.log(p)
+      this.generateKeystoreText = p  // trigger re-render
     },
     downloadKeystore(){
       const fileName = 'UTC--' + new Date().toISOString().replace(/:/g, '-') + '--' + this.publicAddress + '.txt'
