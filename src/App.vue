@@ -5,16 +5,16 @@
       <b-container>
         <b-row align-h="center">
           <b-alert dismissible show class="text-left" variant="warning">
-            1. This software completely runs in the browser.
+            {{$t('app.textOne')}}
             <br>
-            2. Click "Generate" button below to get a random address.
+            {{$t('app.textTwo')}}
             <br>
-            3. The address is compatible with VET/ETH.
+            {{$t('app.textThree')}}
           </b-alert>
         </b-row>
         <b-row align-h="center">
           <b-col md="4">
-            <generate-holder text="Generate" v-on:generate="addNewWallet"></generate-holder>
+            <generate-holder :text="$t('app.btnText')" v-on:generate="addNewWallet"></generate-holder>
           </b-col>
         </b-row>
         <b-row align-h="around">

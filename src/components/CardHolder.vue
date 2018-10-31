@@ -5,28 +5,28 @@
     <div>
       <b-collapse v-model="showAddress" id="addressSection">
         <addres-section 
-          title="VET Address"
+          :title="$t('cardHolder.addressTitle')"
           :public-address="publicAddress"
           :private-address="privateKey"
-          button-text="Print/Save"
+          :button-text="$t('cardHolder.addressBtnText')"
         />
       </b-collapse>
       <b-collapse v-model="showKeystore" id="keystoreSection">
         <keystore-section
-          title="Keystore"
-          button-text="Download"
-          helper-string="Scan with VeChainThor Mobile"
-          generate-keystore-text="Save as Keystore"
-          modal-title="Choose a password to protect keystore"
+          :title="$t('cardHolder.keystoreTitle')"
+          :button-text="$t('cardHolder.keystoreBtnText')"
+          :helper-string="$t('cardHolder.keystoreHelperString')"
+          :generate-keystore-text="$t('cardHolder.keystoreGenerateText')"
+          :modal-title="$t('cardHolder.keystoreModalTitle')"
           :private-key="privateKey"
           :public-address="publicAddress"
         />
       </b-collapse>
     </div>
     <b-card-footer align="right">
-      <b-button size="sm" variant="link" @click="toggleShowState()" :disabled="showAddress">Address</b-button>
+      <b-button size="sm" variant="link" @click="toggleShowState()" :disabled="showAddress">{{$t('cardHolder.address')}}</b-button>
       |
-      <b-button size="sm" variant="link" @click="toggleShowState()" :disabled="showKeystore">Keystore</b-button>
+      <b-button size="sm" variant="link" @click="toggleShowState()" :disabled="showKeystore">{{$t('cardHolder.keystore')}}</b-button>
     </b-card-footer>
   </b-card>
 </b-col>
