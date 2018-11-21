@@ -8,6 +8,7 @@ import { faCopy } from '@fortawesome/free-solid-svg-icons'
 import { faCode } from '@fortawesome/free-solid-svg-icons'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap-vue/dist/bootstrap-vue.css"
@@ -24,6 +25,7 @@ library.add(faCopy)
 library.add(faMapMarkerAlt)
 library.add(faGlobe)
 library.add(faCode)
+library.add(faDownload)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

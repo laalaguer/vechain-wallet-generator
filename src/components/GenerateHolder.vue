@@ -1,8 +1,8 @@
-<!-- Generate Button Holder -->
+<!-- Generate Button, which emits events  -->
 <template>
   <b-container class="mb-2">
     <b-row align-h="center">
-      <b-button size="lg" variant="primary" @click="generateAddress">{{ text }}</b-button>
+      <b-button size="lg" variant="primary" @click="triggerEvent" >{{ text }}</b-button>
     </b-row>
   </b-container>
 </template>
@@ -10,14 +10,15 @@
 <script>
 export default {
   props: {
-    text: String
+    text: String,  // Button Text to display
+    functionality: String  // The functionality text this button shall emit.
   },
   data() {
     return {}
   },
   methods: {
-    generateAddress(){
-      this.$emit('generate')
+    triggerEvent: function(){
+      this.$emit(this.functionality)
     }
   }
 }

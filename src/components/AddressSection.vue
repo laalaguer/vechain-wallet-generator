@@ -2,11 +2,11 @@
 <template>
   <b-card-body>
     <h4>{{ title }}</h4>
-    <h6 class="text-muted" v-show="showSubtitle">{{ subtitle }}</h6>
     <qr-canvas :text-to-render="publicAddress"></qr-canvas>
-    <b-form-group >
+    <b-form-group>
       <copy-input icon-name="map-marker-alt" :textToCopy="publicAddress"></copy-input>
     </b-form-group>
+    <h4 class="mb-3" >{{ subtitle }}</h4>
     <b-form-group>
       <copy-input icon-name="key" :textToCopy="privateAddress"></copy-input>
     </b-form-group>
