@@ -3,6 +3,7 @@ const kr = {
     textOne: '1. This software completely runs in the browser.',
     textTwo: '2. Click "Generate" button below to get a random address.',
     textThree: '3. The address is compatible with VET/ETH.',
+    textFour: '4. You can download the source code release for offline usage.',
     btnText: "Generate",
     btnTextAgain: "Regenerate!",
     tabPrivateKeyTitle: "Public/Private Key",

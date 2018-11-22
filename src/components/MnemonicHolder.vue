@@ -64,7 +64,7 @@ export default {
     },
     copyWords(){
       copy(this.words.join(' '))
-      this.$toasted.show(this.$t('toasts.title'), {
+      this.$toasted.show(this.$t('toasts.copytitle'), {
         theme: "primary", 
         position: "bottom-center",
         duration : 500

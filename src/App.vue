@@ -10,6 +10,8 @@
             {{$t('app.textTwo')}}
             <br>
             {{$t('app.textThree')}}
+            <br>
+            {{$t('app.textFour')}}
           </b-alert>
         </b-row>
 

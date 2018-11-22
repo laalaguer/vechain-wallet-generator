@@ -1,8 +1,9 @@
 const zh = {
   app: {
     textOne: '1. 此软件完全在浏览器上运行',
-    textTwo: '2. 点击下方的 “生成” 按钮获取一个随机的地址',
-    textThree: '3. 这个地址与 VET/ETH 兼容',
+    textTwo: '2. 点击下方的 “生成” 按钮获取一个随机的钱包',
+    textThree: '3. 这个地址与 VET/ETH 钱包格式兼容',
+    textFour: '4. 你可以点击上方“下载离线使用” 离线使用本网页',
     btnText: "生成",
     btnTextAgain: "再生成一组",
     tabPrivateKeyTitle: "公/私钥",
