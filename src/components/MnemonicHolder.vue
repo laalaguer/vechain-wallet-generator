@@ -18,7 +18,7 @@
           />
         </b-form-group>
         
-        <b-button variant="primary" @click="copyWords">{{buttontitle}}</b-button>
+        <b-button variant="primary" @click="copyWords">{{ buttontitle }}</b-button>
 
       </b-card-body>
     </b-card>
@@ -64,7 +64,7 @@ export default {
     },
     copyWords(){
       copy(this.words.join(' '))
-      this.$toasted.show('Copied', {
+      this.$toasted.show(this.$t('toasts.title'), {
         theme: "primary", 
         position: "bottom-center",
         duration : 500

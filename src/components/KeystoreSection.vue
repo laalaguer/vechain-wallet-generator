@@ -19,18 +19,17 @@
         <b-form-group>
           <copy-input icon-name="code" :textToCopy="jsonString"></copy-input>
         </b-form-group>
-        <b-button variant="primary" @click="downloadKeystore">{{buttonText}}</b-button>
+        <b-button variant="primary" @click="downloadKeystore">{{ buttonText }}</b-button>
       </div>
     </b-card-body>
 
-    <!-- Enter password modal -->
-    <b-modal
+    <b-modal 
       ref="passwordModal"
       :title="modalTitle"
       :cancel-title="cancelButtonText"
       :ok-title="okButtonText"
       @ok="handleOk"
-      @shown="clearPassword">
+      @shown="clearPassword"><!-- Enter password modal -->
 
       <form @submit.stop.prevent="handleSubmit">
         <b-form-input type="password" v-model="userPassword"></b-form-input>

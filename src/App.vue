@@ -21,7 +21,7 @@
                   <b-container id="tabPrivateKey">
                     <b-row align-h="center"><!-- Generate button row -->
                       <b-col md="4">
-                        <generate-holder functionality="generateaddress" :text="generatePButtonText" v-on:generateaddress="addNewWallet"></generate-holder>
+                        <generate-holder functionality="generateaddress" :text="generatePButtonText" v-on:generateaddress="showRegerateWalletModal"></generate-holder>
                       </b-col>
                     </b-row>
                     <b-row align-h="center"><!-- Vet card holder row -->
@@ -34,12 +34,17 @@
                       </card-holder>
                     </b-row>
                   </b-container>
+                  <b-modal 
+                    ref="regenerateAddressModal"
+                    :cancel-title="$t('modals.cancelButtonText')"
+                    :ok-title="$t('modals.okayButtonText')"
+                    @ok="addNewWallet">{{ $t('modals.regenerateWalletText') }}</b-modal>
                 </b-tab>
                 <b-tab :title="$t('app.tabMnemonicTitle')" ><!-- Tab: Mnemonic style-->
                   <b-container id="tabMnemonic">
                     <b-row align-h="center"><!-- Generate button row -->
                       <b-col md="4">
-                        <generate-holder functionality="generatemnemonic" :text="generateMButtonText" v-on:generatemnemonic="addNewMnemonic"></generate-holder>
+                        <generate-holder functionality="generatemnemonic" :text="generateMButtonText" v-on:generatemnemonic="showRegenerateMnemonicModal"></generate-holder>
                       </b-col>
                     </b-row>
                     <b-row align-h="center"><!-- Vet card holder row -->
@@ -55,6 +60,11 @@
                       </mnemonic-holder>
                     </b-row>
                   </b-container>
+                  <b-modal 
+                    ref="regenerateMnemonicModal"
+                    :cancel-title="$t('modals.cancelButtonText')"
+                    :ok-title="$t('modals.okayButtonText')"
+                    @ok="addNewMnemonic">{{ $t('modals.regenerateMnemonicText') }}</b-modal>
                 </b-tab>
               </b-tabs>
             </b-card>
@@ -87,6 +97,20 @@ export default {
     }
   },
   methods:{
+    showRegerateWalletModal(){
+      if (this.cardHolders.length > 0){
+        this.$refs.regenerateAddressModal.show()
+      } else {
+        this.addNewWallet()
+      }
+    },
+    showRegenerateMnemonicModal(){
+      if (this.mnemonicHolders.length > 0){
+        this.$refs.regenerateMnemonicModal.show()
+      } else {
+        this.addNewMnemonic()
+      }
+    },
     addNewWallet(){
       let wallet = calc.createWallet()  // Data structure of a single ETH/VIP wallet
       this.cardHolders.push(wallet)

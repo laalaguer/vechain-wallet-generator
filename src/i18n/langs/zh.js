@@ -27,6 +27,15 @@ const zh = {
     keystore: '密钥库',
     mnemonicTitle: '请抄下助记词',
     mnemonicCopy: '复制助记词'
+  },
+  toasts: {
+    copytitle: '已复制'
+  },
+  modals: {
+    okayButtonText: "同意并继续",
+    cancelButtonText: "取消",
+    regenerateMnemonicText: "本操作将擦去当前生成的助记词，并生成一组新的",
+    regenerateWalletText: "本操作将擦去当前的公/私钥，并生成一组新的",
   }
 }
 

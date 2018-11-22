@@ -27,6 +27,15 @@ const en = {
     keystore: 'Keystore',
     mnemonicTitle: 'Please Write Down',
     mnemonicCopy: 'Copy Words'
+  },
+  toasts: {
+    copytitle: 'Copied'
+  },
+  modals: {
+    okayButtonText: "Okay",
+    cancelButtonText: "Cancel",
+    regenerateMnemonicText: "Wipe current words and genereate new words, are you sure?",
+    regenerateWalletText: "Wipe current wallet and generate a new one, are you sure?",
   }
 }
 
