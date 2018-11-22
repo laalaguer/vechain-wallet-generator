@@ -4,10 +4,9 @@
     <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
     <b-navbar-brand>{{$t('topBar.title')}}</b-navbar-brand>
     <b-collapse is-nav id="nav_collapse">
-      <b-nav-text></b-nav-text>
       <b-navbar-nav>
         <b-nav-item href="https://github.com/laalaguer/VeChain-Address"><font-awesome-icon class="github-icon" :icon="['fab','github']" />Github</b-nav-item>
-        <b-nav-item href="https://github.com/laalaguer/VeChain-Address/releases">{{$t('topBar.Releases')}}</b-nav-item>
+        <b-nav-item href="https://github.com/laalaguer/VeChain-Address/releases"><font-awesome-icon class="github-icon" :icon="['fas','download']"/>{{$t('topBar.releases')}}</b-nav-item>
       </b-navbar-nav>
       <b-dropdown variant="link" no-caret class="m-2">
         <template slot="button-content">
