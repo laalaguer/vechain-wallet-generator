@@ -25,8 +25,7 @@ export default {
     return {
       langs: [
         { key: 'en', name: 'English' },
-        { key: 'zh', name: '简体中文' },
-        { key: 'kr', name: '한국어' }
+        { key: 'zh', name: '简体中文' }
       ]
     }
   },
