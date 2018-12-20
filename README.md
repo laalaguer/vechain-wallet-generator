@@ -29,5 +29,25 @@ npm run dev
 npm run build
 ```
 
+## Prepare for release
+```bash
+# Build release file
+npm run build
+
+# Git add the files
+git add .
+git commit -m "prepare for v1.1.1 release"
+
+# Tag the git
+git tag -a v1.1.1 -m "release message"
+
+# Push the changes to git
+git push origin master
+
+# Push the git tag
+git push origin v1.1.1
+```
+
+
 ## Acknowledgement
 Adapted from [vanity-eth](https://github.com/bokub/vanity-eth) project.
