@@ -87,6 +87,25 @@ const createWallet = function() {
 }
 
 /**
+ * Form a wallet from a given private key.
+ * @param {Buffer} priv 
+ */
+const gatherWallet = function(priv) {
+  const addr = privateKeyToAddress(priv)
+
+  const privHex = priv.toString('hex')
+  const addrHex = addr.toString('hex')
+
+  return {
+    address: addrHex,
+    addressPrefixed: '0x' + addrHex,
+    addressEIP55: toEIP55Address(addrHex),
+    addressEIP55Prefixed: '0x' + toEIP55Address(addrHex),
+    privateKey: privHex
+  }
+}
+
+/**
  * Turn a lower case address to case sensitive address as per EIP 55.
  * @param address {String} A hex presenting the address
  * @returns {String} A hex address but with lower/upper case
@@ -166,6 +185,7 @@ const createKeystore = function (privKey, password, cb) {
 
 module.exports = {
   createWallet,
+  gatherWallet,
   privateKeyToAddress,
   toEIP55Address,
   createKeystore

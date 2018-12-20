@@ -1,42 +1,41 @@
 <template>
-<div>
-  <b-card-body>
-    <div v-show="!hasGenerated"><!-- Keystore hasn't been generated yet -->
-      <h4>{{ title }}</h4>
-      <h6 class="text-muted" v-show="showSubtitle">{{ subtitle }}</h6>
-      <b-container>
-        <b-row align-v="center" align-h="center" style="height:16rem;">
-          <b-button variant="primary" @click="showModal">{{generateKeystoreText}}</b-button>
-        </b-row>
-      </b-container>
-    </div>
+  <div>
+    <b-card-body>
+      <div v-show="!hasGenerated"><!-- Keystore hasn't been generated yet -->
+        <h4>{{ title }}</h4>
+        <h6 class="text-muted" v-show="showSubtitle">{{ subtitle }}</h6>
+        <b-container>
+          <b-row align-v="center" align-h="center" style="height:16rem;">
+            <b-button variant="primary" @click="showModal">{{generateKeystoreText}}</b-button>
+          </b-row>
+        </b-container>
+      </div>
 
-    <div v-show="hasGenerated"><!-- Use has entered password, app generated keystore -->
-      <h4>{{ title }}</h4>
-      <h6 class="text-muted" v-show="showSubtitle">{{ subtitle }}</h6>
-      <qr-canvas ref="jsonqr" :text-to-render="jsonString"></qr-canvas>
-      <p class="card-text text-muted">{{ helperString }}</p>
-      <b-form-group>
-        <copy-input icon-name="code" :textToCopy="jsonString"></copy-input>
-      </b-form-group>
-      <b-button variant="primary" @click="downloadKeystore">{{buttonText}}</b-button>
-    </div>
-  </b-card-body>
+      <div v-show="hasGenerated"><!-- Use has entered password, app generated keystore -->
+        <h4>{{ title }}</h4>
+        <h6 class="text-muted" v-show="showSubtitle">{{ subtitle }}</h6>
+        <qr-canvas ref="jsonqr" :text-to-render="jsonString"></qr-canvas>
+        <p class="card-text text-muted">{{ helperString }}</p>
+        <b-form-group>
+          <copy-input icon-name="code" :textToCopy="jsonString"></copy-input>
+        </b-form-group>
+        <b-button variant="primary" @click="downloadKeystore">{{ buttonText }}</b-button>
+      </div>
+    </b-card-body>
 
-  <!-- Enter password modal -->
-  <b-modal
-    ref="passwordModal"
-    :title="modalTitle"
-    :cancel-title="cancelButtonText"
-    :ok-title="okButtonText"
-    @ok="handleOk"
-    @shown="clearPassword">
+    <b-modal 
+      ref="passwordModal"
+      :title="modalTitle"
+      :cancel-title="cancelButtonText"
+      :ok-title="okButtonText"
+      @ok="handleOk"
+      @shown="clearPassword"><!-- Enter password modal -->
 
-    <form @submit.stop.prevent="handleSubmit">
-      <b-form-input type="password" v-model="userPassword"></b-form-input>
-    </form>
-  </b-modal>
-</div>
+      <form @submit.stop.prevent="handleSubmit">
+        <b-form-input type="password" v-model="userPassword"></b-form-input>
+      </form>
+    </b-modal>
+  </div>
 </template>
 
 <script>

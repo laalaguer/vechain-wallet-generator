@@ -12,9 +12,9 @@ Just run `index.html` in any morden web browser.
 
 Please refer to [release](https://github.com/laalaguer/VeChain-Address/releases) page for zip downloading.
 ## Security
-1. This project runs totally in browser.
+1. This project runs in user's browser.
 2. Random source is from browser.
-3. Source code is open.
+3. Source code is open for comments.
 
 ## Local Development
 
