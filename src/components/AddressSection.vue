@@ -33,7 +33,7 @@ export default {
   },
   methods: {
    downloadAddress(){
-     const fileName = "VET: " + this.publicAddress + '.txt'
+     const fileName = "VET_" + this.publicAddress + '.txt'
      const content = "VET Address: " + this.publicAddress + '\n' + "Private key: " + this.privateAddress
      download(content, fileName, 'application/json')
    } 
