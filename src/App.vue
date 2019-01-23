@@ -54,6 +54,7 @@
                         :key="item.wallet.privateKey"
                         :title="$t('cardHolder.addressTitle')"
                         :secondtitle="$t('cardHolder.mnemonicTitle')"
+                        :subtitle="$t('cardHolder.addressSubTitle')"
                         :buttontitle="$t('cardHolder.mnemonicCopy')"
                         :wallet="item.wallet"
                         :words="item.words"

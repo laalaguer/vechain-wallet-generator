@@ -6,7 +6,7 @@
     <b-form-group>
       <copy-input icon-name="map-marker-alt" :textToCopy="publicAddress"></copy-input>
     </b-form-group>
-    <h4 class="mb-3" >{{ subtitle }}</h4>
+    <h6 class="mb-3" >{{ subtitle }}</h6>
     <b-form-group>
       <copy-input icon-name="key" :textToCopy="privateAddress"></copy-input>
     </b-form-group>

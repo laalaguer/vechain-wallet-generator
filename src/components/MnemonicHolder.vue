@@ -5,11 +5,14 @@
       <b-card-body>
         <h4>{{ title }}</h4>
         <qr-canvas :text-to-render="wallet.addressEIP55Prefixed"></qr-canvas>
-        <b-form-group >
+        <b-form-group>
           <copy-input icon-name="map-marker-alt" :textToCopy="wallet.addressEIP55Prefixed"></copy-input>
         </b-form-group>
-
-        <h4 class="mb-3">{{ secondtitle }}</h4>
+        <h6 class="mb-3" >{{ subtitle }}</h6>
+        <b-form-group>
+          <copy-input icon-name="key" :textToCopy="wallet.privateKey"></copy-input>
+        </b-form-group>
+        <h6 class="mb-3">{{ secondtitle }}</h6>
         <b-form-group>
           <word-text class="mx-2" v-for="item in words" 
             :key="item"
@@ -35,6 +38,7 @@ export default {
   props: {
       title: String, // title of the card
       secondtitle: String, // Second title of the card
+      subtitle: String,
       buttontitle: String, // Button string of the card
       wallet: Object,  // wallet object, contains public address, private key, etc
       words: Array,  // Array of strings, contains words to display

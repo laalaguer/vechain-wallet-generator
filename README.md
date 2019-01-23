@@ -36,6 +36,7 @@ npm run build
 ```bash
 # Build release file
 npm run build
+npm run publish
 
 # Git add the files
 git add .

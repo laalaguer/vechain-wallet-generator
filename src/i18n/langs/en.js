@@ -26,7 +26,7 @@ const en = {
     keystoreModalCancelButtonText: "Cancel",
     address: 'Address',
     keystore: 'Keystore',
-    mnemonicTitle: 'Please Write Down',
+    mnemonicTitle: 'Mnemonic Words',
     mnemonicCopy: 'Copy Words'
   },
   toasts: {
