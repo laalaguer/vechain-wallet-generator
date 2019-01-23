@@ -2,19 +2,22 @@
 
 > A Vue.js project of VET address generation.
 
-## Demo
-[https://laalaguer.github.io/VeChain-Address/](https://laalaguer.github.io/VeChain-Address/)
+## Web Page Demo
+Visit [https://laalaguer.github.io/VeChain-Address/](https://laalaguer.github.io/VeChain-Address/)
+
+<img src="./interface.jpg" style="max-width:500px;"/>
 
 ## Download For Offline Usage
-This program can be downloaded and can use offline. 
+This program can be downloaded and run offline. 
 
-Just run `index.html` in any morden web browser.
+After downloading, just click `index.html` in any morden web browser.
 
 Please refer to [release](https://github.com/laalaguer/VeChain-Address/releases) page for zip downloading.
+
 ## Security
 1. This project runs in user's browser.
-2. Random source is from browser.
-3. Source code is open for comments.
+2. Random number generator is from user's browser.
+3. Open source project.
 
 ## Local Development
 
@@ -47,7 +50,6 @@ git push origin master
 # Push the git tag
 git push origin v1.1.1
 ```
-
 
 ## Acknowledgement
 Adapted from [vanity-eth](https://github.com/bokub/vanity-eth) project.

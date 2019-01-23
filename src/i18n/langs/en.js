@@ -15,7 +15,7 @@ const en = {
   },
   cardHolder: {
     addressTitle: 'VET Address',
-    addressSubTitle: 'It\'s Private Key',
+    addressSubTitle: 'Its Private Key',
     addressBtnText: "Print/Save",
     keystoreTitle: 'Keystore',
     keystoreBtnText: "Download",
