@@ -16,10 +16,10 @@
         </b-row>
 
         <b-row align-h="center">
-          <b-col sm="12" md="8" lg="6">
+          <b-col cols="12" sm="12" md="12" lg="6">
             <b-card no-body>
               <b-tabs card>
-                <b-tab :title="$t('app.tabPrivateKeyTitle')" active><!-- Tab: Public/Private key style-->
+                <b-tab :title="$t('app.tabPrivateKeyTitle')" active><!-- Tab: Public/Private key -->
                   <b-container id="tabPrivateKey">
                     <b-row align-h="center"><!-- Generate button row -->
                       <b-col md="4">
@@ -42,7 +42,7 @@
                     :ok-title="$t('modals.okayButtonText')"
                     @ok="addNewWallet">{{ $t('modals.regenerateWalletText') }}</b-modal>
                 </b-tab>
-                <b-tab :title="$t('app.tabMnemonicTitle')" ><!-- Tab: Mnemonic style-->
+                <b-tab :title="$t('app.tabMnemonicTitle')" ><!-- Tab: Mnemonic -->
                   <b-container id="tabMnemonic">
                     <b-row align-h="center"><!-- Generate button row -->
                       <b-col md="4">

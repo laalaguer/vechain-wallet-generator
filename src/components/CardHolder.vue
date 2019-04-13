@@ -1,6 +1,6 @@
 <!-- Card Holder, a single card component -->
 <template>
-  <b-col class="mt-4 mb-4">
+  <b-col class="mt-4 mb-4 pl-0 pr-0">
     <b-card :border-variant="borderColor" no-body class="shadow">
       <div>
         <b-collapse v-model="showAddress" id="addressSection">

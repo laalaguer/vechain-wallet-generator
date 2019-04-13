@@ -1,6 +1,6 @@
 <!-- A single card component of Mnemonic -->
 <template>
-  <b-col class="mt-4 mb-4">
+  <b-col class="mt-4 mb-4 pl-0 pr-0">
     <b-card :border-variant="borderColor" no-body class="shadow">
       <b-card-body>
         <h4>{{ title }}</h4>

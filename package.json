@@ -1,7 +1,7 @@
 {
   "name": "vechain-address",
-  "description": "A Vue.js project of VET address generation",
-  "version": "1.0.0",
+  "description": "A Vue.js project of VET Wallet generation",
+  "version": "2.0.5",
   "author": "laalaguer <laalaguer@gmail.com>",
   "private": true,
   "scripts": {
