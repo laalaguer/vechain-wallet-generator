@@ -3,6 +3,7 @@ var webpack = require('webpack')
 const ExtractTextPlugin = require("extract-text-webpack-plugin")
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin")
 const PrerenderSPAPlugin = require('prerender-spa-plugin')
+const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
 
 module.exports = {
   entry: './src/main.js',
@@ -82,6 +83,9 @@ if (process.env.NODE_ENV === 'production') {
     new PrerenderSPAPlugin({
       // Required - The path to the webpack-outputted app to prerender.
       staticDir: path.join(__dirname, 'dist'),
+      routes: ['/'],
+      renderAfterElementExists: '#app',
+      renderer: new Renderer({}),
       // Optional - The path your rendered app should be output to.
       // (Defaults to staticDir.)
       outputDir: path.join(__dirname, 'prerendered'),
