@@ -82,15 +82,17 @@ if (process.env.NODE_ENV === 'production') {
     }),
     new PrerenderSPAPlugin({
       // Required - The path to the webpack-outputted app to prerender.
-      staticDir: path.join(__dirname, 'dist'),
+      staticDir: path.join(__dirname),
       routes: ['/'],
       renderAfterElementExists: '#app',
-      renderer: new Renderer({}),
+      renderer: new Renderer({
+        renderAfterTime: 5000,
+      }),
       // Optional - The path your rendered app should be output to.
       // (Defaults to staticDir.)
       outputDir: path.join(__dirname, 'prerendered'),
       // Optional - The location of index.html
-      indexPath: path.join(__dirname, 'index.html')
+      // indexPath: path.join(__dirname, 'index.html')
     })
   ])
 }
