@@ -2,6 +2,7 @@ var path = require('path')
 var webpack = require('webpack')
 const ExtractTextPlugin = require("extract-text-webpack-plugin")
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin")
+const PrerenderSPAPlugin = require('prerender-spa-plugin')
 
 module.exports = {
   entry: './src/main.js',
@@ -77,6 +78,15 @@ if (process.env.NODE_ENV === 'production') {
     }),
     new webpack.LoaderOptionsPlugin({
       minimize: true
+    }),
+    new PrerenderSPAPlugin({
+      // Required - The path to the webpack-outputted app to prerender.
+      staticDir: path.join(__dirname, 'dist'),
+      // Optional - The path your rendered app should be output to.
+      // (Defaults to staticDir.)
+      outputDir: path.join(__dirname, 'prerendered'),
+      // Optional - The location of index.html
+      indexPath: path.join(__dirname, 'index.html')
     })
   ])
 }
