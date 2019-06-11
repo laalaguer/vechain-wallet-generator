@@ -3,7 +3,7 @@
 > A Vue.js project of VET address generation.
 
 ## Web Page Demo
-Visit [https://laalaguer.github.io/VeChain-Address/](https://laalaguer.github.io/VeChain-Address/)
+[https://vechainaddress.abyteahead.com](https://vechainaddress.abyteahead.com)
 
 <img src="./interface.jpg" style="max-width:500px;"/>
 
