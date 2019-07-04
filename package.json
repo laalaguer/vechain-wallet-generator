@@ -1,7 +1,7 @@
 {
   "name": "vechain-address",
-  "description": "A Vue.js project of VET Wallet generation",
-  "version": "2.0.5",
+  "description": "A Vue.js project of VET Wallet creation",
+  "version": "2.0.6",
   "author": "laalaguer <laalaguer@gmail.com>",
   "private": true,
   "scripts": {
@@ -23,6 +23,7 @@
     "downloadjs": "^1.4.7",
     "keccak": "^1.4.0",
     "popper.js": "^1.12.9",
+    "puppeteer": "^1.18.1",
     "qrcode": "^1.2.2",
     "randombytes": "^2.0.6",
     "scrypt-js": "^2.0.3",
