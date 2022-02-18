@@ -1,6 +1,6 @@
-# VeChain Address Generator
+# VeChain Wallet Generator
 
-> A Vue.js project of VET address generation.
+> A Vue.js project of VeChain wallet generation.
 
 ## Web Page Demo
 [https://vechainaddress.abyteahead.com](https://vechainaddress.abyteahead.com)
