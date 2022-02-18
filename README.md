@@ -3,7 +3,7 @@
 > A Vue.js project of VeChain wallet generation.
 
 ## Web Page Demo
-[https://vechainaddress.abyteahead.com](https://vechainaddress.abyteahead.com)
+[web](https://laalaguer.github.io/vechain-wallet-generator/)
 
 <img src="./interface.jpg" style="max-width:500px;"/>
 
