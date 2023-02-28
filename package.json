@@ -17,7 +17,7 @@
     "bip32": "^1.0.2",
     "bip39": "^2.5.0",
     "bootstrap": "^4.3.1",
-    "bootstrap-vue": "^1.2.0",
+    "bootstrap-vue": "^2.23.1",
     "copy-to-clipboard": "^3.0.8",
     "crypto-js": "^3.1.9-1",
     "downloadjs": "^1.4.7",
